@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y git curl libmcrypt-dev default-mysql-cl
 # Add WP-CLI 
 RUN curl -o /bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 
-COPY script.sh /bin/wp
+COPY scripts/wrapper.sh /bin/wp
 RUN chmod +x /bin/wp-cli.phar /bin/wp
 
 # Cleanup
