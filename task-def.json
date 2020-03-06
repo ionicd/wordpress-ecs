@@ -5,7 +5,6 @@
     {
       "name": "wordpress-app",
       "image": "docker.io/sauravkc14/wordpress",
-      "region": "us-east-1",
       "portMappings": [
         {
           "containerPort": 9000,
