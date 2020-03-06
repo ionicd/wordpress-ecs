@@ -1,6 +1,6 @@
 {
   "family": "wordpress-ecs-app",
-  "networkMode": "awsvpc",
+  "networkMode": "<default>",
   "containerDefinitions": [
     {
       "name": "wordpress-app",
@@ -16,8 +16,8 @@
     }
   ],
   "requiresCompatibilities": [
-    "FARGATE"
+    "EC2"
   ],
-  "cpu": "512",
-  "memory": "1024"
+  "cpu": "1024",
+  "memory": "512"
 }
