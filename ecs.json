@@ -1,0 +1,14 @@
+{
+    "cluster": "wordpress-cluster",
+    "serviceName": "ecs-wordpress",
+    "taskDefinition": "wordpress-ecs-app",
+    "loadBalancers": [
+        {
+            "targetGroupArn": "aws_lb_target_group.default.arn",
+            "containerName": "web",
+            "containerPort": 9000
+        }
+    ],
+    "desiredCount": 1,
+    "role": "ecs-service-role-wordpress"
+}
