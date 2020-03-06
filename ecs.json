@@ -1,14 +1,13 @@
 {
-    "cluster": "wordpress-cluster",
-    "serviceName": "ecs-wordpress",
-    "taskDefinition": "wordpress-ecs-app",
-    "loadBalancers": [
-        {
-            "targetGroupArn": "aws_lb_target_group.default.arn",
-            "containerName": "web",
-            "containerPort": 9000
-        }
-    ],
-    "desiredCount": 1,
-    "role": "ecs-service-role-wordpress"
+    "cluster": {
+        "clusterArn": "aws_ecs_cluster.default.arn",
+        "clusterName": "wordpress-cluster",
+        "status": "ACTIVE",
+        "registeredContainerInstancesCount": 0,
+        "pendingTasksCount": 0,
+        "runningTasksCount": 0,
+        "activeServicesCount": 0,
+        "statistics": [],
+        "tags": []
+    }
 }
