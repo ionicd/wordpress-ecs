@@ -10,9 +10,6 @@
       "protocol": "tcp"
     }
   ],
-  "requiresCompatibilities": [
-    "EC2"
-  ],
   "cpu": "1024",
   "memory": "512"
   }
