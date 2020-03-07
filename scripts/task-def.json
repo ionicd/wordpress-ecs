@@ -1,18 +1,13 @@
-{
-  "family": "wordpress-ecs-app",
-  "networkMode": "<default>",
-  "containerDefinitions": [
+[
+  {
+  "name": "wordpress-app",
+  "image": "docker.io/sauravkc14/wordpress",
+  "essential": true,
+  "portMappings": [
     {
-      "name": "wordpress-app",
-      "image": "docker.io/sauravkc14/wordpress",
-      "portMappings": [
-        {
-          "containerPort": 9000,
-          "hostPort": 9000,
-          "protocol": "tcp"
-        }
-      ],
-      "essential": true
+      "containerPort": 9000,
+      "hostPort": 9000,
+      "protocol": "tcp"
     }
   ],
   "requiresCompatibilities": [
@@ -20,4 +15,5 @@
   ],
   "cpu": "1024",
   "memory": "512"
-}
+  }
+]
