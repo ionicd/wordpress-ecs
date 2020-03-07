@@ -1,7 +1,7 @@
 [
   {
   "name": "wordpress-ecs-app",
-  "image": "docker.io/sauravkc14/wordpress",
+  "image": "docker.io/sauravkc14/wordpress:latest",
   "essential": true,
   "portMappings": [
     {
