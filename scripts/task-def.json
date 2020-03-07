@@ -9,7 +9,7 @@
       "hostPort": 0
     }
   ],
-  "cpu": "1024",
-  "memory": "512"
+  "cpu": 1024,
+  "memory": 512
   }
 ]
