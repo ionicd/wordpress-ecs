@@ -6,8 +6,7 @@
   "portMappings": [
     {
       "containerPort": 9000,
-      "hostPort": 9000,
-      "protocol": "tcp"
+      "hostPort": 0
     }
   ],
   "cpu": "1024",
